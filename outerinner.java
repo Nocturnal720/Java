@@ -21,3 +21,4 @@ class OuterClass
         inner.display();
     }
 }
+
