@@ -2,7 +2,7 @@ class Parent
 {
     void show() 
     {
-        System.out.println("This is Parent class method");
+        System.out.println("Parent class displayed");
     }
 }
 
@@ -10,7 +10,7 @@ class Child extends Parent
 {
     void show() 
     {
-        System.out.println("This is Child class method");
+        System.out.println("Child class displayed");
     }
 
     void display() 
@@ -18,7 +18,11 @@ class Child extends Parent
         super.show(); 
     }
 
-    public static void refer(String[] args) 
+}
+
+public class refer
+{
+    public static void main(String[] args) 
     {
         Child obj = new Child();
         obj.display();
