@@ -1,26 +1,16 @@
 class Parent 
 {
     int x = 10;
-
-    Parent() {
-        System.out.println("Parent class constructor");
-    }
 }
 
 class Child extends Parent 
 {
-    int x = 20;
-
-    Child() 
-    {
-        super(); 
-        System.out.println("Child class constructor");
-    }
+    int x = 100;
 
     void display() 
     {
-        System.out.println("Value of x using this: " + this.x);
-        System.out.println("Value of x using super: " + super.x);
+        System.out.println("Value of child class: " + this.x);
+        System.out.println("Value of parent class: " + super.x);
     }
 
     public static void thissuper(String[] args) 
@@ -29,3 +19,4 @@ class Child extends Parent
         obj.display();
     }
 }
+
