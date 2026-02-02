@@ -1,9 +1,9 @@
-class Parent 
+class parent 
 {
-    int x = 10;
+    int x = 50;
 }
 
-class Child extends Parent 
+class Child extends parent 
 {
     int x = 100;
 
@@ -12,11 +12,13 @@ class Child extends Parent
         System.out.println("Value of child class: " + this.x);
         System.out.println("Value of parent class: " + super.x);
     }
+}
 
-    public static void thissuper(String[] args) 
+public class thissuper
+{
+    public static void main(String[] args) 
     {
         Child obj = new Child();
         obj.display();
     }
 }
-
